@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_user_Title">
+        <item>地图</item>
+        <item>新闻</item>
+        <item>介绍</item>
+        <item>我的账户</item>
+    </string-array>
+
+    <string-array name="tab_admin_Title">
+        <item>用户</item>
+        <item>管理员</item>
+        <item>维修人员</item>
+        <item>按摩椅放置点</item>
+        <item>按摩椅</item>
+        <item>充值卡</item>
+    </string-array>
+</resources>

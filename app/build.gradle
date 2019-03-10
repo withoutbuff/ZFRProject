@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        complie {
+            keyAlias 'mykey'
+            keyPassword '123456'
+            storeFile file('C:/Users/16159/Desktop/desktopFile/mykey.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.zfrproject"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.complie
+        }
+        debug {
+            signingConfig signingConfigs.complie
+        }
+    }
+}
+
+dependencies {
+    //新的导入依赖方式api=complain，用implement会can't resolve symbol R
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api 'com.android.support:appcompat-v7:27.1.0'
+    api 'com.android.support.constraint:constraint-layout:1.0.2'
+    api 'com.android.support:design:27.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    api 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    //    如果导入失败需要更改网络环境
+    implementation 'com.android.support:cardview-v7:27.1.0'
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    api 'org.litepal.android:core:1.6.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'jtds:jtds:1.2'
+    implementation 'com.github.yuzhiqiang1993:zxing:2.1.6'
+}

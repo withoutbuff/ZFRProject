@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="MassageChairProject"></dbname>
+    <version value="1"></version>
+    <list>
+
+        <mapping class="com.example.zfrproject.dataBase.Admin"></mapping>
+        <mapping class="com.example.zfrproject.dataBase.Fettler"></mapping>
+        <mapping class="com.example.zfrproject.dataBase.MassageChair"></mapping>
+        <mapping class="com.example.zfrproject.dataBase.MassageChairLocation"></mapping>
+        <mapping class="com.example.zfrproject.dataBase.Statement"></mapping>
+    </list>
+
+</litepal>
+<!--User的U打成了u，我就说怎么老是找不到user-->

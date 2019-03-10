@@ -1,0 +1,7 @@
+<resources>
+    <style name="IntroductionActivityTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>
+
+    <!--IntroductionActivity专用主题，继承AppTheme所有属性，value-21只有5.0以上系统才能读取-->

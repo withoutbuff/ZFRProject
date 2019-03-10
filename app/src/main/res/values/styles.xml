@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#66CCFF</item>
+        <item name="colorPrimaryDark">#66CCFF</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+<style name="IntroductionActivityTheme" parent="AppTheme"></style>
+    <!--适配5.0以下系统-->
+
+    <!--引导-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
+<!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+<!--设置透明状态栏-->
